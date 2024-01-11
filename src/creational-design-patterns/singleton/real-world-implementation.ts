@@ -1,8 +1,7 @@
 class Logger {
   private static instance: Logger;
-  myInstance: number = 0;
 
-  constructor() {}
+  private constructor() {}
 
   public static getInstance(): Logger {
     if (!Logger.instance) {
@@ -15,5 +14,3 @@ class Logger {
   public info(message: string) {}
   public error(message: string) {}
 }
-
-const logger = new Logger(); // creating an object of Logger class
